@@ -1,0 +1,29 @@
+{
+  "name": "booksearch-engine",
+  "version": "1.0.0",
+  "description": "## Your Task",
+  "main": "index.js",
+  "dependencies": {
+    "apollo-server-express": "^3.5.0",
+    "bcrypt": "^5.0.1",
+    "express": "^4.17.1",
+    "graphql": "^16.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.13",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessicaga9410/BookSearch-Engine.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jessicaga9410/BookSearch-Engine/issues"
+  },
+  "homepage": "https://github.com/jessicaga9410/BookSearch-Engine#readme"
+}
