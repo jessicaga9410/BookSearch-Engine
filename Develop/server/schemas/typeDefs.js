@@ -28,6 +28,11 @@ const typeDefs = gql`
     title: String!
   }
 
+  type Auth{
+    token: String!
+    user: User
+  }
+
   type Query {
     me:User
   }
