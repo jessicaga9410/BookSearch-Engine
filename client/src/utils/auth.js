@@ -1,41 +1,44 @@
-const jwt = require("jsonwebtoken");
+import decode from 'jwt-decode';
+class AuthService{
+  get profile(){
+    return decode(this.getToken());
+}
 
-const secret = "mysecretsshhhhh";
-const expiration = "2h";
+loggedIn() {
 
-module.exports = {
-  signToken: function ({ username, email, _id }) {
-    const payload = { username, email, _id };
+  const token=this.getToken();
+  return !!token && !this.isTokenExpired(token);
+}
 
-    return jwt.sign({ data: payload }, secret, { expiresIn: expiration });
-  },
+// check if token is expired
+isTokenExpired(token) {
+  try {
+    const decoded = decode(token);
+    if (decoded.exp < Date.now() / 1000) {
+      return true;
+    } else return false;
+  } catch (err) {
+    return false;
+  }
+}
 
-  authMiddleware: function ({ req }) {
-    //allows token to be sent via req.body, req.query, or headers
+getToken() {
+  // Retrieves the user token from localStorage
+  return localStorage.getItem('id_token');
+}
 
-    let token = req.body.token || req.query.token || req.headers.authorization;
-    // let token = req.query.token || req.headers.authorization;
-    console.log("TOKEN", token);
-    //separate "Bearer" from "<tokenvalue>"
-    if (req.headers.authorization) {
-      token = token.split(" ").pop().trim();
-    }
+login(idToken) {
+  // Saves user token to localStorage
+  localStorage.setItem('id_token', idToken);
+  window.location.assign('/');
+}
 
-    //if no token, return request object as is
-    if (!token) {
-      return req;
-    }
+logout() {
+  // Clear user token and profile data from localStorage
+  localStorage.removeItem('id_token');
+  // this will reload the page and reset the state of the application
+  window.location.assign('/');
+}
+}
 
-    try {
-      //decode and attach user data to request object
-      const { data } = jwt.verify(token, secret, { maxAge: expiration });
-      console.log("DATA", data);
-      req.user = data;
-    } catch {
-      console.log("Invalid token");
-    }
-
-    //return updated request object
-    return req;
-  },
-};
+export default new AuthService();
