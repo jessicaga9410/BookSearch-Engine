@@ -26,7 +26,8 @@ Book Search Engine is an Apollo and React based application that allows users to
 ----------------------------------
 * [Book Search Engine](https://jessicaga9410.github.io/BookSearch-engine/)
 
-![Screenshot 2021-12-10 180900](https://user-images.githubusercontent.com/87554644/145652400-b57ade4e-40a5-4043-9abd-f953e3723c74.jpg)
+![Screenshot 2021-12-10 180900 - Copy - Copy](https://user-images.githubusercontent.com/87554644/145652612-4b7279c2-9cc1-408e-b0e9-7684b74d9531.jpg)
+
 
  
  
