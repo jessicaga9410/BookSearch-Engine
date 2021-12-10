@@ -1,68 +1,56 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Book Search Engine 
+----------------------------------------------------------------
+![badge](https://img.shields.io/badge/license-MIT-ff69b4)
 
-## Available Scripts
+## Description 
+----------------------------
+Book Search Engine is an Apollo and React based application that allows users to browse Google Books API and choose books to save and display in their own, unique account pages. 
 
-In the project directory, you can run:
+ ## Link to Deployed Application
+ ---------------------------
+* [Book Search Engine]()
+### User Story
+----------------------
+* AS AN avid reader
+* I WANT to search for new books to read
+* SO THAT I can keep a list of books to purchase 
 
-### `yarn start`
+## Table of Contents 
+-----------------------------
+* [Usage](#usage) 
+* [License](#license) 
+* [Contributing](#contributing)
+* [Questions](#questions)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Link to Github Repository
+----------------------------------
+* [Book Search Engine](https://jessicaga9410.github.io/BookSearch-engine/)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+![Screenshot]()
+![Screenshot]()
+ 
+ 
 
-### `yarn test`
+### Usage
+-------------------------
+Type the title of a book that interests you into the search bar field. After clicking the search button, click the save button of books you want to keep in your wishlist.  
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### License
+---------------------
+![badge](https://img.shields.io/badge/license-MIT-ff69b4)
+MIT
+  
+### Contributing
+----------------------------------------
+Book Search Engine is an open source project that was built from cloned, front-end starter code at the University of Texas Web Development Bootcamp, and anyone is encouraged to contribute by cloning or forking the code and working to improve its function and versatility.
 
-### `yarn build`
+### Questions
+-----------------------------
+    
+##### Interested in other projects from this developer? Visit the following GitHub page:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ https://github.com/jessicaga9410/BookSearch-engine
+ 
+##### Send any questions to the following email address:
+jessicaga9410@gmail.com
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
